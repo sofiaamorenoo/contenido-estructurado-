@@ -1,136 +1,314 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <!--
-    HEAD
-    Contiene información sobre el documento.
-    Aquí podemos definir metadata, título, favicon y archivos externos.
-  -->
-
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <meta
-    name="description"
-    content="Documento base para estudiar estructura HTML, semántica y cajas."
-  >
-  <title>HTML, estructura y cajas</title>
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico">
-  <!-- Hoja de estilos externa -->
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
-  <!--
-    HEADER
-    Contenido introductorio del documento.
-  -->
-  <header>
-
-    <h1>HTML, estructura y cajas</h1>
-
-    <p>
-      Los elementos HTML generan cajas, pero cada elemento tiene una función dentro del documento.
-    </p>
-
-    <!--
-      NAV
-      Contiene enlaces principales de navegación.
-    -->
-    <nav>
-      <a href="#elementos">Elementos</a>
-      <a href="#estructura">Estructura</a>
-      <a href="#jerarquia">Jerarquía</a>
-    </nav>
-
-  </header>
-
-  <!--
-    MAIN
-    Contiene el contenido principal del documento.
-  -->
-  <main>
-
-    <!--
-      SECTION
-      Agrupa contenido relacionado por un mismo tema.
-    -->
-    <section id="elementos">
-
-      <h2>Los elementos HTML son cajas</h2>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Índice semántico sobre los tipos de mimetismo y camuflaje según clasificación por familia y categoría."
+    >
+    <title>Mimetismo y Camuflaje</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mimetismo y Camuflaje</h1>
       <p>
-        Cada elemento ocupa un espacio dentro del documento.
-        El navegador calcula su tamaño, posición y relación con otros elementos.
+        Mecanismos de comunicación sensorial y adaptación evolutiva en el reino
+        animal y vegetal.
       </p>
 
-      <!--
-        ARTICLE
-        Representa una unidad de contenido dentro de esta sección.
-      -->
-      <article>
+      <nav aria-label="Navegación principal">
+        <a href="#camuflaje">Camuflaje</a>
+        <a href="#mimetismo">Mimetismo</a>
+        <a href="#especies">Especies y ecosistemas</a>
+      </nav>
+    </header>
 
-        <h3>No todas las cajas son iguales</h3>
-
+    <main>
+      <section id="camuflaje" aria-labelledby="titulo-camuflaje">
+        <h2 id="titulo-camuflaje">Familia: Camuflaje</h2>
         <p>
-          Un título, un párrafo y un enlace generan cajas,
-          pero tienen funciones diferentes.
+          <strong>Categoría que abarca:</strong> Camuflaje (cripsis) y mecanismos
+          de ocultación visual, olfativa y acústica.
         </p>
 
-        <a href="#">Esto es un enlace</a>
+        <article>
+          <h3>Coloración disruptiva</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Visual. <strong>Tipo:</strong>
+            Camuflaje. Utiliza patrones de alto contraste para romper la silueta.
+          </p>
+          <p><strong>Ejemplos:</strong> Cebra, leopardo, rana arborícola.</p>
+        </article>
 
-      </article>
+        <article>
+          <h3>Homocromía</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Visual. <strong>Tipo:</strong>
+            Camuflaje. Coincide con los colores del sustrato o del hábitat.
+          </p>
+          <p>
+            <strong>Ejemplos:</strong> Camaleón, lenguado, saltamontes verde.
+          </p>
+        </article>
 
-    </section>
+        <article>
+          <h3>Contrasombra</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Visual. <strong>Tipo:</strong>
+            Camuflaje. Reduce la visibilidad de sombras mediante pigmentación
+            dorsal oscura y ventral clara.
+          </p>
+          <p>
+            <strong>Ejemplos:</strong> Tiburón blanco, pingüino, ciervo.
+          </p>
+        </article>
 
-    <section id="estructura">
+        <article>
+          <h3>Enmascaramiento</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Visión y tacto. <strong>Tipo:</strong>
+            Morfológico / visual. Copia la forma de objetos inanimados como hojas
+            o ramas.
+          </p>
+          <p>
+            <strong>Ejemplos:</strong> Insecto palo, mariposa hoja, oruga
+            Geometridae.
+          </p>
+        </article>
 
-      <h2>Las cajas forman estructuras</h2>
+        <article>
+          <h3>Camuflaje olfativo y acústico</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Olfato y audición. <strong>Tipo:</strong>
+            Multisensorial. Oculta la presencia o absorbe señales del entorno.
+          </p>
+          <p>
+            <strong>Ejemplos:</strong> Peces que absorben olor a algas, mariposas
+            nocturnas.
+          </p>
+        </article>
+      </section>
 
-      <p>
-        Una caja puede contener otras cajas.
-        Las etiquetas HTML describen cómo se relaciona cada parte del contenido.
-      </p>
-
-      <article>
-
-        <h3>Una estructura contiene más estructuras</h3>
-
+      <section id="mimetismo" aria-labelledby="titulo-mimetismo">
+        <h2 id="titulo-mimetismo">Familia: Mimetismo</h2>
         <p>
-          Este artículo está dentro de una sección y contiene
-          a su vez un título y un párrafo.
+          <strong>Categoría que abarca:</strong> Mimetismo defensivo, ofensivo,
+          intraspecífico y sensorial.
         </p>
 
-      </article>
+        <article>
+          <h3>Mimetismo Batesiano</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Visión, audición y olfato.
+            <strong>Tipo:</strong> Defensivo. Una especie inofensiva imita señales
+            de advertencia de una tóxica.
+          </p>
+          <p>
+            <strong>Ejemplos:</strong> Serpiente falsa coral, moscas de las flores.
+          </p>
+        </article>
 
-    </section>
+        <article>
+          <h3>Mimetismo Mülleriano</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Visión, gusto y olfato.
+            <strong>Tipo:</strong> Defensivo / mutualista. Dos o más especies
+            nocivas comparten patrones de advertencia.
+          </p>
+          <p>
+            <strong>Ejemplos:</strong> Mariposas Heliconius, avispas y abejas.
+          </p>
+        </article>
 
-    <section id="jerarquia">
+        <article>
+          <h3>Mimetismo agresivo</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Visión, audición y químico.
+            <strong>Tipo:</strong> Ofensivo. Un depredador imita a una especie
+            inofensiva para acercarse a su presa.
+          </p>
+          <p>
+            <strong>Ejemplos:</strong> Mantis orquídea, pez rape, araña bola.
+          </p>
+        </article>
 
-      <h2>Las etiquetas crean jerarquía</h2>
+        <article>
+          <h3>Automimetismo</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Visión. <strong>Tipo:</strong>
+            Intraspecífico / corporal. Un organismo imita una parte de su propio
+            cuerpo para desviar ataques.
+          </p>
+          <p>
+            <strong>Ejemplos:</strong> Mariposas con manchas oculares en las alas,
+            serpientes.
+          </p>
+        </article>
 
-      <p>
-        Un h1 representa el título principal.
-        Un h2 identifica una sección.
-        Un h3 introduce un nivel secundario.
-      </p>
+        <article>
+          <h3>Mimetismo acústico y olfativo</h3>
+          <p>
+            <strong>Canal sensorial:</strong> Audición y olfato. <strong>Tipo:</strong>
+            No visual. Emite sonidos u olores para engañar al receptor.
+          </p>
+          <p>
+            <strong>Ejemplos:</strong> Mochuelo imitando siseo de serpiente,
+            orquídeas Ophrys.
+          </p>
+        </article>
+      </section>
 
-    </section>
+      <section id="especies" aria-labelledby="titulo-especies">
+        <h2 id="titulo-especies">Clasificación por especies y ecosistemas</h2>
 
-  </main>
+        <article>
+          <h3>Animales</h3>
 
-  <!--
-    FOOTER
-    Contiene información de cierre o complementaria.
-  -->
-  <footer>
+          <article>
+            <h4>Invertebrados</h4>
+            <ul>
+              <li>
+                <strong>Pulpo mimo / imitador</strong> (<em>Thaumoctopus mimicus</em>):
+                Camuflaje y mimetismo para engañar enemigos o evitar ser encontrado;
+                vive en aguas saladas de océanos y mares del mundo; su sentido principal
+                es la visión; se usa para caza y supervivencia; la función es ocultamiento
+                y pretender ser otra especie.
+              </li>
+              <li>
+                <strong>Mantis orquídea</strong> (<em>Hymenopus coronatus</em>):
+                Mimetismo para parecer una flor y atrapar insectos; habita en selvas
+                tropicales y bosques húmedos del sudeste asiático; actúa principalmente
+                por la visión; sirve para caza y supervivencia; su uso es ocultamiento
+                y pretender.
+              </li>
+              <li>
+                <strong>Insecto palo de Vietnam</strong> (<em>Medauroidea extradentata</em>):
+                Mimetismo visual para integrarse con el entorno; vive en bosques tropicales
+                y subtropicales de Vietnam; el sentido principal es la visión; se usa para
+                supervivencia; su función es ocultamiento.
+              </li>
+              <li>
+                <strong>Mariposa hoja seca común</strong> (<em>Gastropacha quercifolia</em>):
+                Camuflaje para pasar desapercibida; habita en bosques densos, selvas tropicales
+                y zonas arboladas de Europa y Asia; se apoya en la visión; se usa para
+                supervivencia; su función es ocultamiento.
+              </li>
+              <li>
+                <strong>Mariposa Caligo común</strong> (<em>Caligo telamonius memnon</em>):
+                Mimetismo que simula ojos de búho en las alas; vive en selvas de Centro y
+                Sudamérica; usa la visión; sirve para supervivencia; su función es ocultamiento
+                y asustar.
+              </li>
+              <li>
+                <strong>Polilla tigre común</strong> (<em>Arctia caja</em>):
+                Mimetismo acústico para despistar y advertir toxicidad; habita en regiones
+                tropicales, subtropicales y templadas; actúa por sonido; se usa para
+                supervivencia; su función es aturdir y despistar.
+              </li>
+              <li>
+                <strong>Cigarras comunes</strong> (<em>Cicada orni</em>):
+                Camuflaje cromático y textural sobre ramas y troncos; vive en regiones templadas
+                y tropicales; usa la visión; se usa para supervivencia; su función es despistar.
+              </li>
+              <li>
+                <strong>Cigarra negra y escarlata</strong> (<em>Huechys sanguinea</em>):
+                Mimetismo aposemático para disuadir ataques; vive en zonas boscosas, matorrales
+                y áreas tropicales o subtropicales del sur y sudeste de Asia; usa la visión;
+                sirve para supervivencia; su función es advertir y pretender.
+              </li>
+              <li>
+                <strong>Escarabajo termitófilo</strong> (<em>Trichopsenius frosti</em>):
+                Mimetismo químico agresivo para infiltrarse en nidos de termitas; vive en nidos
+                subterráneos de termitas; usa el olfato; se usa para supervivencia; su función es
+                infiltrarse y devorar huevos y larvas.
+              </li>
+            </ul>
+          </article>
 
-    <p>Guía de estudio · HTML + CSS</p>
+          <article>
+            <h4>Vertebrados</h4>
+            <ul>
+              <li>
+                <strong>Camaleón común</strong> (<em>Chamaeleo chamaeleon</em>):
+                Camuflaje para escapar de enemigos y presas y expresar emociones; vive en zonas
+                de matorral, pinares y huertos mediterráneos; usa la visión; su finalidad es caza
+                y supervivencia; la función es ocultar.
+              </li>
+              <li>
+                <strong>Serpiente toro</strong> (<em>Pituophis catenifer</em>):
+                Mimetismo para parecer ser una víbora; habita en bosques de Norteamérica; usa
+                sonido y visión; se usa para supervivencia; su función es advertir y pretender.
+              </li>
+              <li>
+                <strong>Erizo común europeo</strong> (<em>Erinaceus europaeus</em>):
+                Camuflaje natural con su coloración parda y púas; además se embadurna con heces
+                de zorrillo para ahuyentar depredadores; habita en bosques caducifolios y matorrales
+                de Europa; usa visión y olor; se emplea para supervivencia; su función es despistar.
+              </li>
+              <li>
+                <strong>Zorro polar / ártico</strong> (<em>Vulpes lagopus</em>):
+                Mimetismo estacional por cambio de color de pelaje; vive en la tundra ártica y
+                alpina; usa la visión; sirve para caza y supervivencia; su función es ocultarse.
+              </li>
+              <li>
+                <strong>Camaleón pantera</strong> (<em>Furcifer pardalis</em>):
+                Camuflaje para caza, supervivencia y comunicación; vive en bosques tropicales de
+                Madagascar; usa la visión; sirve para caza, supervivencia y comunicación intraespecífica;
+                su función es despistar y señalar intenciones sociales.
+              </li>
+              <li>
+                <strong>Falsa coral</strong> (<em>Lampropeltis triangulum</em>):
+                Mimetismo batesiano para disuadir depredadores; habita en bosques y zonas áridas
+                de América; usa la visión; apuesta por supervivencia; su función es copiar los
+                patrones cromáticos de la coral verdadera.
+              </li>
+              <li>
+                <strong>Saltamontes depredador australiano</strong> (<em>Chlorobalius leucoviridis</em>):
+                Mimetismo acústico para atraer machos de cigarra; vive en el interior árido y
+                semiárido de Australia; usa el sonido; sirve para caza; su función es alimentarse
+                y despistar.
+              </li>
+            </ul>
+          </article>
+        </article>
 
-  </footer>
+        <article>
+          <h3>Plantas</h3>
+          <ul>
+            <li>
+              <strong>Venus atrapamoscas</strong> (<em>Dionaea muscipula</em>):
+              Mimetismo para atraer insectos con néctar y colores rojizos; vive en pantanos y
+              humedales de Carolina del Norte y Carolina del Sur; usa visión y olor; sirve para
+              alimentación; su función es atraer.
+            </li>
+            <li>
+              <strong>Orquídea abeja</strong> (<em>Ophrys apifera</em>):
+              Mimetismo reproductivo para atraer machos mediante forma y feromonas; habita en
+              bosques de niebla, selvas tropicales y montañas húmedas; usa olor; sirve para
+              reproducción; su función es la polinización.
+            </li>
+            <li>
+              <strong>Planta Jarra</strong> (<em>Nepenthes spp.</em>):
+              Mimetismo para imitar fuentes de alimento con colores llamativos y néctar; vive en
+              selvas tropicales y zonas montañosas del sudeste asiático; usa visión y olor; sirve
+              para alimentación; su función es atraer.
+            </li>
+            <li>
+              <strong>Planta piedra</strong> (<em>Lithops julii</em>):
+              Camuflaje (cripsis) para confundirse con rocas y grava; habita en zonas áridas del
+              sur de África; usa la visión; sirve para supervivencia; su función es evitar ser
+              devorada por herbívoros.
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
 
-</body>
+    <footer>
+      <p>Índice de tipos de mimetismo y camuflaje.</p>
+    </footer>
+  </body>
 </html>
