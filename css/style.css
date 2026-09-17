@@ -15,9 +15,9 @@
   --font-family-base: system-ui, Arial, Helvetica, sans-serif;
 
   --font-size-body: 1rem;
-  --font-size-h1: 3rem;
-  --font-size-h2: 1rem;
-  --font-size-h3: 1.75rem; /* son los subtitulos de las categorias*/
+  --font-size-h1: 8rem; /*titulo*/
+  --font-size-h2: 1.5rem; 
+  /*--font-size-h3: 1.75rem; /* son los subtitulos de las categorias*/
 }
 
 /*
