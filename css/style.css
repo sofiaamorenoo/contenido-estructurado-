@@ -9,46 +9,29 @@
 */
 
 :root {
+  --fonts-title: "urca", sans-serif;
+  --font-body: "urca", sans-serif;
   --color-background: #c1c798; /*color de fondo*/
   --color-text: #112c34; /*color del texto*/
   --color-accent: #a34936; /*color de los botones*/
-
   --font-family-base: "urca", sans-serif;
-  --font-size-body: 1rem;
+  --font-size-body: 1.3rem;
   --font-size-h1: 9rem; /*titulo*/
-  --font-size-h2: 2rem; 
-  /*--font-size-h3: 1.75rem; /* son los subtitulos de las categorias*/
-}
+  --font-size-h2: 4rem; 
+  --font-size-h3: 1.75rem;
 
-/*
-  ============================================================
-  SELECTOR UNIVERSAL
-  ============================================================
-  * funciona como un comodín.
-  Selecciona todos los elementos HTML.
-*/
-
-* {
-  box-sizing: border-box;
 }
 
 
-/*
-  ============================================================
-  BODY
-  ============================================================
 
-  Define el sistema visual base del documento.
-*/
 body {
   margin: 0;
-
   background-color: var(--color-background);
   color: var(--color-text);
-
   font-family: var(--font-family-base);
   font-size: var(--font-size-body);
   font-weight: 100;
+
 }
 
 header,
@@ -57,9 +40,6 @@ header,
   
 }
 
-.home-intro h1 {
-  margin-bottom: 1rem;
-}
 
 /*
   ============================================================
@@ -71,26 +51,44 @@ header,
 */
 
 h1 {
-  font-size: var(--font-size-h1);
-  font-family: "urca", sans-serif;
-  font-weight: 300;
+  font-family: "urbana", sans-serif;
+  font-weight: 900;
   font-style: normal;
-  margin: 0 0 1rem;
   font-size: var(--font-size-h1);
-  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
+  line-height: 1;
 }
 
+
+
+.hero p{
+text-align: center;
+font-size: 2.3rem;
+margin-top: 0rem;
+margin-bottom: 2rem;
+
+}
 h2 {
   font-size: var(--font-size-h2);
-  font-weight: 600;
+  font-family: "urbana", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h3 {
   font-size: var(--font-size-h3);
 }
 
+hero{
 
+  margin-top: 2rem;
+  maergin-bottom: 0rem;
+}
 /*
   ============================================================
   LINKS
@@ -98,7 +96,10 @@ h3 {
 
   El color de acento identifica enlaces y acciones.
 */
-
+nav{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
 a {
   color: var(--color-accent);
   text-decoration: none;
