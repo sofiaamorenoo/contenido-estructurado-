@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/bhw8wxo.css");
 /*
   ============================================================
   TOKENS
@@ -12,14 +13,10 @@
   --color-text: #112c34; /*color del texto*/
   --color-accent: #a34936; /*color de los botones*/
 
-  --font-family-base: system-ui, Arial, Helvetica, sans-serif;
-  font-family: "urca", sans-serif;
-font-weight: 400;
-font-style: normal;
-
+  --font-family-base: "urca", sans-serif;
   --font-size-body: 1rem;
   --font-size-h1: 9rem; /*titulo*/
-  --font-size-h2: 1rem; 
+  --font-size-h2: 2rem; 
   /*--font-size-h3: 1.75rem; /* son los subtitulos de las categorias*/
 }
 
@@ -51,11 +48,13 @@ body {
 
   font-family: var(--font-family-base);
   font-size: var(--font-size-body);
+  font-weight: 100;
 }
 
 header,
 .home-intro {
   text-align: center;
+  
 }
 
 .home-intro h1 {
@@ -73,16 +72,18 @@ header,
 
 h1 {
   font-size: var(--font-size-h1);
-}
-
-.brand {
+  font-family: "urca", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   margin: 0 0 1rem;
   font-size: var(--font-size-h1);
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: var(--font-size-h2);
+  font-weight: 600;
 }
 
 h3 {
@@ -110,7 +111,7 @@ nav a,
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  font-weight: 700;
+  font-weight: 300;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
@@ -159,13 +160,6 @@ main {
   font-weight: 400;
 }
 
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
 .home-card {
   display: block;
   padding: 1.5rem 1.25rem;
@@ -175,6 +169,8 @@ main {
   color: var(--color-text);
   text-align: left;
   min-height: 220px;
+  margin: 2rem auto;
+  max-width: 400px;
 }
 
 .home-card p {
@@ -182,16 +178,8 @@ main {
   line-height: 1.6;
 }
 
-@media (max-width: 900px) {
-  .home-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 560px) {
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
+.page-section h1 {
+  text-align: center;
 }
 
 /*
@@ -203,20 +191,7 @@ main {
 header,
 main,
 footer {
-  padding: 2rem;
-}
-
-section {
-  min-height: 100vh;
-  margin-bottom: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-#inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 0 2rem;
 }
 
 nav a {
