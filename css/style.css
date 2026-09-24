@@ -8,15 +8,18 @@
 */
 
 :root {
-  --color-background: #13ab77;
-  --color-text: #112c34;
-  --color-accent: #a34936;
+  --color-background: #c1c798; /*color de fondo*/
+  --color-text: #112c34; /*color del texto*/
+  --color-accent: #a34936; /*color de los botones*/
 
   --font-family-base: system-ui, Arial, Helvetica, sans-serif;
+  font-family: "urca", sans-serif;
+font-weight: 400;
+font-style: normal;
 
   --font-size-body: 1rem;
-  --font-size-h1: 8rem; /*titulo*/
-  --font-size-h2: 1.5rem; 
+  --font-size-h1: 9rem; /*titulo*/
+  --font-size-h2: 1rem; 
   /*--font-size-h3: 1.75rem; /* son los subtitulos de las categorias*/
 }
 
@@ -75,7 +78,7 @@ h1 {
 .brand {
   margin: 0 0 1rem;
   font-size: var(--font-size-h1);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
@@ -97,8 +100,34 @@ h3 {
 
 a {
   color: var(--color-accent);
+  text-decoration: none;
 }
 
+nav a,
+.cta,
+.home-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+nav a,
+.cta {
+  padding: 0.7rem 1.3rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(17, 44, 52, 0.2);
+  box-shadow: 0 4px 12px rgba(17, 44, 52, 0.08);
+}
+
+nav a:hover,
+.cta:hover,
+.home-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(17, 44, 52, 0.12);
+}
 
 /*
   ============================================================
@@ -126,17 +155,31 @@ main {
   margin-bottom: 3rem;
 }
 
+.home-intro > p:first-of-type {
+  font-weight: 400;
+}
+
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .home-card {
-  padding: 1.25rem;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.06);
+  display: block;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text);
+  text-align: left;
+  min-height: 220px;
+}
+
+.home-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
 }
 
 @media (max-width: 900px) {
@@ -178,4 +221,10 @@ section {
 
 nav a {
   margin-right: 1rem;
+}
+
+.cta {
+  margin-top: 1.5rem;
+  background: var(--color-accent);
+  color: #f8f3ed;
 }
