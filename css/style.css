@@ -11,9 +11,10 @@
 :root {
   --fonts-title: "urca", sans-serif;
   --font-body: "urca", sans-serif;
-  --color-background: #c1c798; /*color de fondo*/
-  --color-text: #112c34; /*color del texto*/
-  --color-accent: #a34936; /*color de los botones*/
+  --color-background: #a09526; /*color de fondo*/
+  --color-text: #0d464f; /*color del titulos-subtitulos*/
+  --color-title: #cb0c52; /*color de los titulos*/
+  --color-accent: #352dbf; /*color de los botones*/
   --font-family-base: "urca", sans-serif;
   --font-size-body: 1.3rem;
   --font-size-h1: 9rem; /*titulo*/
@@ -59,15 +60,15 @@ h1 {
   margin-bottom: 0;
   text-transform: uppercase;
   line-height: 1;
+  color: var(--color-title);
 }
-
-
 
 .hero p{
 text-align: center;
 font-size: 2.3rem;
 margin-top: 0rem;
 margin-bottom: 2rem;
+color: var(--color-text);
 
 }
 h2 {
@@ -78,6 +79,7 @@ h2 {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--color-title);
 }
 
 h3 {
