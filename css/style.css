@@ -12,9 +12,9 @@
   --fonts-title: "urca", sans-serif;
   --font-body: "urca", sans-serif;
   --color-background: #a09526; /*color de fondo*/
-  --color-text: #0d464f; /*color del titulos-subtitulos*/
-  --color-title: #cb0c52; /*color de los titulos*/
-  --color-accent: #352dbf; /*color de los botones*/
+  --color-text: #f5e8c6; /*color del titulos-subtitulos*/
+  --color-title: #64531b; /*color de los titulos*/
+  --color-accent: #64531b; /*color de los botones*/
   --font-family-base: "urca", sans-serif;
   --font-size-body: 1.3rem;
   --font-size-h1: 9rem; /*titulo*/
