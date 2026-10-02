@@ -68,6 +68,7 @@ h1 {
   line-height: .9em;
   color: var(--color-title);
   margin-top: .5em;
+  height: auto;
 }
 
 .hero p{
@@ -91,6 +92,7 @@ h2 {
   text-align: center;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+  height: auto;
 }
 
 h3 {
