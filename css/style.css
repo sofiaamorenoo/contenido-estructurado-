@@ -23,6 +23,12 @@
 
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 
 
 body {
@@ -215,4 +221,70 @@ nav a {
 img {
   margin: 3em auto;
   display: block;
+  max-width: 100%;
+  height: auto;
+  /*width: 100%;*/
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 3.5rem;
+    --font-size-h2: 2.25rem;
+    --font-size-body: 1.125rem;
+  }
+
+  main {
+    width: 100%;
+    min-width: 0;
+  }
+
+  header,
+  main,
+  footer {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem auto;
+  }
+
+  nav a {
+    margin-right: 0;
+  }
+
+  img {
+    margin: 2rem auto;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-h1: 2.25rem;
+    --font-size-h2: 1.5rem;
+    --font-size-body: 1rem;
+  }
+
+  header,
+  main,
+  footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  main {
+    line-height: 1.5;
+  }
+
+  .home-card {
+    min-height: 0;
+  }
 }
