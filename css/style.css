@@ -17,7 +17,7 @@
   --color-accent: #64531b; /*color de los botones*/
   --font-family-base: "urca", sans-serif;
   --font-size-body: 1.3rem;
-  --font-size-h1: 9rem; /*titulo*/
+  --font-size-h1: 6rem; /*titulo*/
   --font-size-h2: 4rem; 
   --font-size-h3: 1.75rem;
 
@@ -223,14 +223,22 @@ nav a {
 img {
   margin: 3em auto;
   display: block;
-  max-width: 100%;
-  height: auto;
   width: 100%;
+  max-width: 560px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --font-size-h1: 4rem;
+  }
 }
 
 @media (max-width: 768px) {
   :root {
-    --font-size-h1: 3.5rem;
+    --font-size-h1: 3rem;
     --font-size-h2: 2.25rem;
     --font-size-body: 1.125rem;
   }
