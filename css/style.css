@@ -17,8 +17,8 @@
   --color-accent: #64531b; /*color de los botones*/
   --font-family-base: "urca", sans-serif;
   --font-size-body: 1.3rem;
-  --font-size-h1: 8rem; /*titulo*/
-  --font-size-h2: 4rem; 
+  --font-size-h1: 1rem; /*titulo*/
+  --font-size-h2: 2rem; 
   --font-size-h3: 1.75rem;
 
 }
