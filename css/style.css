@@ -202,12 +202,13 @@ main {
   width: fit-content;
   max-width: 100%;
   margin: 0 auto;
-  padding-left: 1.5rem;
-  list-style: disc;
+  padding-left: 0;
+  list-style: none;
 }
 
 .animal-list li {
   margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
 }
 
 .animal-list a {
@@ -218,15 +219,15 @@ main {
   gap: 1rem;
   min-height: 100px;
   padding: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+
   color: var(--color-text);
 }
 
 .animal-list img {
-  flex: 0 0 100px;
-  width: 100px;
-  height: 76px;
-  margin: 0;
+  flex: 0 0 115px;
+  width: 115px;
+  height: 87px;
+  margin: .35rem auto;
   aspect-ratio: auto;
   object-fit: cover;
 }
