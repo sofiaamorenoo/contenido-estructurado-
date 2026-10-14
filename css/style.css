@@ -224,9 +224,9 @@ main {
 }
 
 .animal-list img {
-  flex: 0 0 115px;
-  width: 115px;
-  height: 87px;
+  flex: 0 0 125px;
+  width: 125px;
+  height: 125px;
   margin: .35rem auto;
   aspect-ratio: auto;
   object-fit: cover;
